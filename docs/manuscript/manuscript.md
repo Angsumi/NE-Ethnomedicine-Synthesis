@@ -77,6 +77,8 @@ Here we build a source-traced synthesis for the seven northeastern states and as
 
 **Additions.** To reduce geographic and community gaps, we added 27 further field studies, which we found by targeted searches of open-access repositories (CSIR-NOPR, Europe PMC, journal archives). Their plant tables were extracted with table parsers or transcribed, and each extracted species was checked against the source text. Species counts matched the totals reported in the papers to within 0–6 species.
 
+**Scope of the corpus.** We deliberately built a corpus in which every record can be traced to and checked against its source text, rather than re-extracting every study listed in earlier reviews. Studies were included when their full text could be obtained, the community and study area were stated, and plants were identified to species. Our aim is to test how counting rules, survey design and verification change conclusions, so traceability was prioritised over exhaustiveness. Overlap with the study list of the previous regional synthesis (Jha and Smith-Hall, 2023) is reported in Section 2.9.
+
 **Final corpus:** 2,742 records from 57 studies, covering all seven states (Supplementary Table S1).
 
 ### 2.2 Survey metadata
@@ -279,7 +281,7 @@ Whether shared use simply reflects shared availability could not be tested adequ
 Our congruence measure partly sidesteps the problem by comparing uses only among plants both communities use. A proper test requires site-level species pools from regional floras and herbaria. Assembling these is a priority for future work.
 
 ### 4.5 Limitations
-- **The corpus is not an exhaustive systematic search.** The previous synthesis reviewed studies that we have not yet screened (135 of the 148 we could parse from its list). A full systematic search may change the counts, though the tests we report are designed to be robust to adding further surveys.
+- **The corpus is source-traced, not exhaustive.** We did not re-extract every study listed by the previous synthesis (Jha and Smith-Hall, 2023). Absolute counts would grow with more studies. The comparisons we report (between evidence tiers, against permutation nulls, and with each survey left out in turn) are relative, and are designed to remain valid as surveys are added.
 - **Condition coding uses a fixed vocabulary.** Some local concepts do not map cleanly onto biomedical conditions.
 - **Some extraction is automatic.** Automatic table extraction can carry text over from neighbouring rows. We retain the original wording and a source-verification flag for every claim, and the pilot audit sheet allows independent checking.
 - **Verification is approximate.** Our source-verification test is automatic and proximity-based. It cannot replace reading the original table.
