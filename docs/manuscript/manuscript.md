@@ -306,7 +306,7 @@ We provide the source-traced dataset and code so that the claims can be checked,
 
 **Declaration of generative AI use.** *[Authors to complete accurately, according to the target journal's policy. If AI-assisted tools were used in code development, data extraction, analysis or drafting, most journals, including Elsevier titles, require this to be disclosed here, along with a statement that the authors reviewed and edited the content and take full responsibility for it.]*
 
-**Data availability.** Code, the source-traced dataset, evidence units, verification logs and figures are available at https://github.com/Angsumi/NE-Ethnomedicine-Synthesis and archived on Zenodo (DOI: *to be added*). Source publications are cited in Supplementary Table S1 and are not redistributed.
+**Data availability.** Code, the source-traced dataset, evidence units, verification logs and figures are available at https://github.com/Angsumi/NE-Ethnomedicine-Synthesis and archived on Zenodo (https://doi.org/10.5281/zenodo.24332943). Source publications are cited in Supplementary Table S1 and are not redistributed.
 
 **Acknowledgements.** We thank the communities whose knowledge is documented in the studies synthesised here, and the authors of those studies.
 

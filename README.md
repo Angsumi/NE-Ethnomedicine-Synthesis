@@ -1,5 +1,7 @@
 # NE India Ethnomedicine — evidence synthesis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24332943.svg)](https://doi.org/10.5281/zenodo.24332943)
+
 **Authors:** Angsuman Das (Pachhunga University College, Mizoram University; ORCID [0000-0001-8146-7697](https://orcid.org/0000-0001-8146-7697)) and
 Ananda Prasad (Rajiv Gandhi University; ORCID [0009-0005-1736-8148](https://orcid.org/0009-0005-1736-8148)).
 
