@@ -55,7 +55,10 @@ def main():
                              reader2_row_found="", reader2_same_use="", reader2_part_ok="", reader2_community_ok="", reader2_notes=""))
     trace = pd.DataFrame(rows)
     summary = pilot[["selection", "taxon", "condition", "species_any_use", "A", "B", "C", "same_part", "A_leave_one_out_min", "states"]]
-    with pd.ExcelWriter(ROOT / "output/pilot_trace.xlsx") as xw:
+    out = ROOT / "output/pilot_trace.xlsx"
+    if out.exists() and "Pilot_trace_author_checked" in pd.ExcelFile(out).sheet_names:
+        print("pilot_trace.xlsx already holds the authors' check; not overwritten"); return
+    with pd.ExcelWriter(out) as xw:
         summary.to_excel(xw, sheet_name="Pilot_pairs", index=False)
         trace.to_excel(xw, sheet_name="Trace_for_two_readers", index=False)
     print(summary.to_string(index=False))
