@@ -1,0 +1,9 @@
+{
+  "species_tested": 875,
+  "spearman_rho_reports_vs_log_occurrences": 0.399,
+  "spearman_p": 1.0805350675913588e-34,
+  "nb_coef_log_occ": 0.738,
+  "nb_p_log_occ": 5.30927251651046e-54,
+  "species_with_zero_ne_gbif_records": 277,
+  "use_specific_pairs_q05_min3": 137
+}

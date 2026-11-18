@@ -1,0 +1,10 @@
+pandas
+openpyxl
+numpy
+scipy
+statsmodels
+matplotlib
+seaborn
+pdfplumber
+pymupdf
+rapidocr_onnxruntime

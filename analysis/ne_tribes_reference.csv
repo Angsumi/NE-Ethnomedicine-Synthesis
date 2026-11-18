@@ -1,0 +1,109 @@
+state,tribe,aliases,status,language_family,size_tier,zone
+Arunachal Pradesh,Adi,adi|minyong|padam|pasi|bori|bokar|pailibo|ramo|milang|komkar|panggi|shimong,ST,Tibeto-Burman (Tani),major,Eastern Himalaya
+Arunachal Pradesh,Nyishi,nyishi|nishi|nyshi|dafla,ST,Tibeto-Burman (Tani),major,Eastern Himalaya
+Arunachal Pradesh,Galo,galo,ST,Tibeto-Burman (Tani),major,Eastern Himalaya
+Arunachal Pradesh,Apatani,apatani,ST,Tibeto-Burman (Tani),medium,Eastern Himalaya
+Arunachal Pradesh,Tagin,tagin,ST,Tibeto-Burman (Tani),medium,Eastern Himalaya
+Arunachal Pradesh,Hill Miri,hill miri,ST,Tibeto-Burman (Tani),small,Eastern Himalaya
+Arunachal Pradesh,Idu Mishmi,idu|mishmi,ST,Tibeto-Burman (Mishmic),medium,Eastern Himalaya
+Arunachal Pradesh,Digaru Mishmi (Taraon),digaru|taraon|mishmi,ST,Tibeto-Burman (Mishmic),small,Eastern Himalaya
+Arunachal Pradesh,Miju Mishmi (Kaman),miju|kaman|mishmi,ST,Tibeto-Burman (Mishmic),small,Eastern Himalaya
+Arunachal Pradesh,Monpa,monpa,ST,Tibeto-Burman (Bodish/East Bodish),major,Eastern Himalaya
+Arunachal Pradesh,Sherdukpen,sherdukpen,ST,Tibeto-Burman (Kho-Bwa),small,Eastern Himalaya
+Arunachal Pradesh,Aka (Hrusso),\baka\b|hrusso,ST,Tibeto-Burman (Hrusish),small,Eastern Himalaya
+Arunachal Pradesh,Miji (Sajolang),miji|sajolang,ST,Tibeto-Burman (Hrusish),small,Eastern Himalaya
+Arunachal Pradesh,Bugun (Khowa),bugun|khowa,ST,Tibeto-Burman (Kho-Bwa),small,Eastern Himalaya
+Arunachal Pradesh,Memba,memba,ST,Tibeto-Burman (Bodish),small,Eastern Himalaya
+Arunachal Pradesh,Khamba,khamba,ST,Tibeto-Burman (Bodish),small,Eastern Himalaya
+Arunachal Pradesh,Meyor (Zakhring),meyor|zakhring,ST,Tibeto-Burman (Bodish),small,Eastern Himalaya
+Arunachal Pradesh,Khamti (Tai Khamti),khamti|khampti,ST,Tai-Kadai,medium,Eastern Himalaya foothills
+Arunachal Pradesh,Singpho,singpho|jingpho,ST,Tibeto-Burman (Jingpho),small,Patkai foothills
+Arunachal Pradesh,Tangsa,tangsa|tangshang,ST,Tibeto-Burman (Naga-Konyak),medium,Patkai hills
+Arunachal Pradesh,Nocte,nocte,ST,Tibeto-Burman (Naga-Konyak),medium,Patkai hills
+Arunachal Pradesh,Wancho,wancho,ST,Tibeto-Burman (Naga-Konyak),medium,Patkai hills
+Arunachal Pradesh,Tutsa,tutsa,ST,Tibeto-Burman (Naga-Konyak),small,Patkai hills
+Arunachal Pradesh,Yobin (Lisu),yobin|lisu,ST,Tibeto-Burman (Lolo-Burmese),small,Eastern Himalaya
+Assam,Bodo (Boro Kachari),bodo|boro,ST (Plains),Tibeto-Burman (Bodo-Garo),major,Brahmaputra Valley
+Assam,Mishing (Miri),mishing|mising|miri,ST (Plains),Tibeto-Burman (Tani),major,Brahmaputra Valley
+Assam,Karbi (Mikir),karbi|mikir,ST (Hills),Tibeto-Burman (Kuki-Chin-Naga),major,Karbi-Dima Hasao hills
+Assam,Rabha,rabha,ST (Plains),Tibeto-Burman (Bodo-Garo),major,Brahmaputra Valley
+Assam,Sonowal Kachari,sonowal,ST (Plains),Tibeto-Burman (Bodo-Garo),major,Brahmaputra Valley
+Assam,Tiwa (Lalung),tiwa|lalung,ST (Plains),Tibeto-Burman (Bodo-Garo),major,Brahmaputra Valley
+Assam,Dimasa,dimasa|barman,ST (Hills),Tibeto-Burman (Bodo-Garo),major,Karbi-Dima Hasao hills / Barak Valley
+Assam,Deori,deori,ST (Plains),Tibeto-Burman (Bodo-Garo),medium,Brahmaputra Valley
+Assam,Garo (Assam),garo,ST (Hills),Tibeto-Burman (Bodo-Garo),medium,Brahmaputra Valley
+Assam,Hajong,hajong,ST (Plains),Indo-Aryan,small,Brahmaputra Valley
+Assam,Mech,mech,ST (Plains),Tibeto-Burman (Bodo-Garo),small,Brahmaputra Valley
+Assam,Hmar (Assam),hmar,ST (Hills),Tibeto-Burman (Kuki-Chin),small,Barak Valley / Dima Hasao
+Assam,Kuki (Assam),kuki|thadou,ST (Hills),Tibeto-Burman (Kuki-Chin),medium,Karbi-Dima Hasao hills
+Assam,Zeme Naga (Assam),zeme,ST (Hills),Tibeto-Burman (Naga),small,Dima Hasao
+Assam,Singpho (Assam),singpho,ST (Plains),Tibeto-Burman (Jingpho),small,Brahmaputra Valley
+Assam,Tai Khamti (Assam),khamti|khampti,ST (Plains),Tai-Kadai,small,Brahmaputra Valley
+Assam,Ahom,ahom,non-ST (OBC),Tai-Kadai / Assamese,major,Brahmaputra Valley
+Assam,Moran,moran,non-ST (OBC),Assamese (Tibeto-Burman origin),medium,Brahmaputra Valley
+Assam,Motok,motok|matak,non-ST (OBC),Assamese,small,Brahmaputra Valley
+Assam,Chutia,chutia|sutiya,non-ST (OBC),Assamese,major,Brahmaputra Valley
+Assam,Tai Phake / Aiton / Khamyang,phake|aiton|khamyang|turung,non-ST,Tai-Kadai,small,Brahmaputra Valley
+Assam,Koch-Rajbongshi,koch|rajbongshi|rajbanshi,non-ST (OBC),Indo-Aryan,major,Brahmaputra Valley
+Assam,Tea tribes (Adivasi),tea tribe|adivasi|santal|munda|oraon,non-ST (OBC),Austroasiatic / Dravidian,major,Brahmaputra Valley
+Manipur,Meitei,meitei|manipuri,non-ST (general/OBC),Tibeto-Burman (Meitei),major,Manipur Valley
+Manipur,Tangkhul Naga,tangkhul,ST,Tibeto-Burman (Naga),major,Manipur hills
+Manipur,Thadou-Kuki,thadou|kuki,ST,Tibeto-Burman (Kuki-Chin),major,Manipur hills
+Manipur,Kabui / Rongmei (Zeliangrong),kabui|rongmei|zeliangrong|inpui|liangmai|zeme,ST,Tibeto-Burman (Naga),major,Manipur hills
+Manipur,Mao Naga,\bmao\b,ST,Tibeto-Burman (Naga),major,Manipur hills
+Manipur,Poumai Naga,poumai,ST,Tibeto-Burman (Naga),medium,Manipur hills
+Manipur,Maram Naga,maram,ST,Tibeto-Burman (Naga),small,Manipur hills
+Manipur,Maring,maring,ST,Tibeto-Burman (Naga),small,Manipur hills
+Manipur,Anal,anal,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Paite,paite,ST,Tibeto-Burman (Kuki-Chin),medium,Manipur hills
+Manipur,Hmar (Manipur),hmar,ST,Tibeto-Burman (Kuki-Chin),medium,Manipur hills
+Manipur,Vaiphei,vaiphei,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Zou,\bzou\b|\bzomi\b,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Kom,\bkom\b,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Chothe,chothe,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Lamkang,lamkang,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Manipur,Gangte / Simte / Aimol / Chiru / Koireng / Monsang / Moyon / Tarao,gangte|simte|aimol|chiru|koireng|monsang|moyon|tarao,ST,Tibeto-Burman (Kuki-Chin),small,Manipur hills
+Meghalaya,Khasi,khasi|bhoi|lyngngam,ST,Austroasiatic (Khasian),major,Meghalaya Plateau
+Meghalaya,Jaintia (Pnar) / War,jaintia|pnar|\bwar\b,ST,Austroasiatic (Khasian),major,Meghalaya Plateau
+Meghalaya,Garo (A·chik),garo|achik|a·chik,ST,Tibeto-Burman (Bodo-Garo),major,Meghalaya Plateau (Garo Hills)
+Meghalaya,Hajong (Meghalaya),hajong,ST,Indo-Aryan,small,Garo Hills plains
+Meghalaya,Koch (Meghalaya),koch,ST,Tibeto-Burman / Indo-Aryan,small,Garo Hills plains
+Meghalaya,Rabha (Meghalaya),rabha,ST,Tibeto-Burman (Bodo-Garo),small,Garo Hills plains
+Meghalaya,Biate,biate,ST,Tibeto-Burman (Kuki-Chin),small,Meghalaya Plateau
+Mizoram,Mizo (Lushai),mizo|lushai|lusei,ST,Tibeto-Burman (Kuki-Chin),major,Mizo hills
+Mizoram,Lai (Pawi),\blai\b|pawi,ST,Tibeto-Burman (Kuki-Chin),medium,Mizo hills
+Mizoram,Mara (Lakher),\bmara\b|lakher,ST,Tibeto-Burman (Kuki-Chin),medium,Mizo hills
+Mizoram,Chakma (Mizoram),chakma,ST,Indo-Aryan,medium,Mizo hills
+Mizoram,Bru (Reang) (Mizoram),\bbru\b|reang,ST,Tibeto-Burman (Bodo-Garo),small,Mizo hills
+Mizoram,Hmar (Mizoram),hmar,ST,Tibeto-Burman (Kuki-Chin),medium,Mizo hills
+Mizoram,Paite (Mizoram),paite,ST,Tibeto-Burman (Kuki-Chin),small,Mizo hills
+Mizoram,Bawm / Pang / Tlau,bawm|\bpang\b|tlau,ST,Tibeto-Burman (Kuki-Chin),small,Mizo hills
+Nagaland,Konyak,konyak,ST,Tibeto-Burman (Naga-Konyak),major,Naga-Patkai hills
+Nagaland,Ao,\bao\b,ST,Tibeto-Burman (Naga),major,Naga-Patkai hills
+Nagaland,Sumi (Sema),sumi|sema,ST,Tibeto-Burman (Naga),major,Naga-Patkai hills
+Nagaland,Angami,angami,ST,Tibeto-Burman (Naga),major,Naga-Patkai hills
+Nagaland,Lotha,lotha,ST,Tibeto-Burman (Naga),major,Naga-Patkai hills
+Nagaland,Chakhesang,chakhesang,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Phom,\bphom\b,ST,Tibeto-Burman (Naga-Konyak),medium,Naga-Patkai hills
+Nagaland,Chang,\bchang\b,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Sangtam,sangtam,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Yimkhiung (Yimchunger),yimkhiung|yimchunger,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Khiamniungan,khiamniungan,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Zeliang (Zeme-Liangmai),zeliang|zeme|liangmai,ST,Tibeto-Burman (Naga),medium,Naga-Patkai hills
+Nagaland,Pochury,pochury,ST,Tibeto-Burman (Naga),small,Naga-Patkai hills
+Nagaland,Rengma,rengma,ST,Tibeto-Burman (Naga),small,Naga-Patkai hills
+Nagaland,Tikhir,tikhir,ST,Tibeto-Burman (Naga),small,Naga-Patkai hills
+Nagaland,Kuki (Nagaland),kuki,ST,Tibeto-Burman (Kuki-Chin),small,Naga-Patkai hills
+Nagaland,Kachari (Dimasa) (Nagaland),kachari|dimasa,ST,Tibeto-Burman (Bodo-Garo),small,Naga-Patkai foothills
+Tripura,Tripuri (Debbarma),tripuri|debbarma|kokborok,ST,Tibeto-Burman (Bodo-Garo),major,Tripura hills & plains
+Tripura,Reang (Bru),reang|\bbru\b,ST,Tibeto-Burman (Bodo-Garo),major,Tripura hills & plains
+Tripura,Jamatia,jamatia,ST,Tibeto-Burman (Bodo-Garo),medium,Tripura hills & plains
+Tripura,Noatia,noatia,ST,Tibeto-Burman (Bodo-Garo),small,Tripura hills & plains
+Tripura,Chakma (Tripura),chakma,ST,Indo-Aryan,medium,Tripura hills & plains
+Tripura,Halam (incl. Molsom / Kaipeng / Ranglong),halam|molsom|kaipeng|ranglong,ST,Tibeto-Burman (Kuki-Chin),medium,Tripura hills & plains
+Tripura,Mog,\bmog\b|marma,ST,Tibeto-Burman (Lolo-Burmese),small,Tripura hills & plains
+Tripura,Kuki / Darlong (Tripura),kuki|darlong,ST,Tibeto-Burman (Kuki-Chin),small,Tripura hills & plains
+Tripura,Garo (Tripura),garo,ST,Tibeto-Burman (Bodo-Garo),small,Tripura hills & plains
+Tripura,Uchai,uchai,ST,Tibeto-Burman (Bodo-Garo),small,Tripura hills & plains
+Tripura,Munda / Santal / Oraon / Bhil (Tripura),munda|santal|oraon|bhil,ST,Austroasiatic / Dravidian,small,Tripura hills & plains
+Tripura,Bishnupriya Manipuri,bishnupriya,non-ST,Indo-Aryan,small,Tripura hills & plains

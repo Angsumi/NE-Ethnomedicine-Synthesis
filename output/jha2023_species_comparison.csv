@@ -1,0 +1,28 @@
+species_in_review,category,n_groups,species,our_reports_any_use,our_reports_best_specific_use,best_specific_use,n_distinct_conditions,share_agreeing_on_best_use
+Centella asiatica,Very high,35,Centella asiatica,28.0,6.0,dysentery,23.0,0.21
+Ageratum conyzoides,Very high,29,Ageratum conyzoides,23.0,19.0,wounds/cuts,12.0,0.83
+Houttuynia cordata,Very high,29,Houttuynia cordata,30.0,15.0,dysentery,26.0,0.5
+Psidium guajava,Very high,27,Psidium guajava,20.0,14.0,dysentery,12.0,0.7
+Clerodendron colebrookianum,Very high,25,Clerodendrum glandulosum,24.0,20.0,hypertension,16.0,0.83
+Spilanthes paniculata,Very high,24,Spilanthes paniculata,12.0,7.0,toothache/oral,5.0,0.58
+Zingiber officinale,Very high,23,Zingiber officinale,17.0,9.0,cough,40.0,0.53
+Paedaria foetida,Very high,22,Paederia foetida,16.0,7.0,diarrhoea,15.0,0.44
+Artemisia nilagirica,Very low,4,Artemisia nilagirica,6.0,3.0,headache,11.0,0.5
+Callicarpa arborea,Very low,4,Callicarpa arborea,5.0,3.0,diabetes,9.0,0.6
+Citrus medica,Very low,4,Citrus medica,6.0,3.0,urinary disorder,9.0,0.5
+Clerodendrum serratum,Very low,4,Clerodendrum serratum,2.0,1.0,eye disorder,2.0,0.5
+Coptis teeta,Very low,4,Coptis teeta,3.0,2.0,fever,8.0,0.67
+Cuscuta reflexa,Very low,4,Cuscuta reflexa,7.0,2.0,hair/dandruff/lice,6.0,0.29
+Drymaria cordata,Very low,4,Drymaria cordata,13.0,5.0,common cold,16.0,0.38
+Paederia scandens,Very low,4,Paederia foetida,16.0,7.0,diarrhoea,15.0,0.44
+Solanum indicum,Very low,4,Solanum indicum,,,,,
+Trichosanthes tricuspidata,Very low,4,Trichosanthes tricuspidata,1.0,1.0,burns,1.0,1.0
+Zanthoxylum rhesta,Very low,4,Zanthoxylum rhetsa,3.0,1.0,diarrhoea,5.0,0.33
+Angiopteris evecta,Very low,3,Angiopteris evecta,1.0,1.0,tonic/weakness,1.0,1.0
+Crassocephalum crepideoides,Very low,3,Crassocephalum crepidioides,8.0,4.0,wounds/cuts,9.0,0.5
+Elaeagnus pyriformis,Very low,3,Elaeagnus pyriformis,1.0,1.0,constipation,1.0,1.0
+Hedyotis scandens,Very low,3,Dimetia scandens,6.0,2.0,skin disease,13.0,0.33
+Piper brachystachyum,Very low,3,Piper brachystachyum,,,,,
+Piper mullesua,Very low,3,Piper mullesua,3.0,2.0,bronchitis,3.0,0.67
+Piper pedicellatum,Very low,3,Piper pedicellatum,,,,,
+Tinospora cordifolia,Very low,3,Tinospora cordifolia,6.0,2.0,bone fracture,7.0,0.33
