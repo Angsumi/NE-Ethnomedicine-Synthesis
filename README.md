@@ -44,7 +44,7 @@ Scripts 13–18 run from the derived files in `output/` and `data/`. They don't 
 | `analysis/13_evidence_units.py` | independent evidence units, condition vocabulary, source-text verification |
 | `analysis/14_taxonomy_gbif.py` | name resolution to GBIF Backbone (cached in `data/taxonomy_gbif.csv`) |
 | `analysis/15_recurrence.py` | recurrence tiers, agreement ladder, leave-one-out, permutation null, design effect |
-| `analysis/16_pilot_trace.py` | 10-pair pilot with source snippets and two-reader audit sheet |
+| `analysis/16_pilot_trace.py` | 10-pair pilot with source snippets, checked by the authors |
 | `analysis/17_availability.py` | GBIF occurrence availability proxy and use-specificity test |
 | `analysis/18_crosswalk_jha2023.py` | bibliography and species crosswalk with Jha & Smith-Hall 2023 |
 | `analysis/19_geocode_districts.py` | district coordinates (OpenStreetMap Nominatim; cached in `data/district_coords.csv`) |

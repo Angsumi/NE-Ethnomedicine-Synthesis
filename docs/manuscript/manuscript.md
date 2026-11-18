@@ -127,7 +127,7 @@ A pair was called **recurrent** if supported by ≥3 independent reports. This t
 **Null for congruence.** Use congruence was also compared with a null in which conditions were shuffled among each assemblage's own plants (200 permutations).
 
 ### 2.7 Pilot source audit
-Ten pairs were selected by a rule fixed in advance: the five with the most tier-A reports, and five drawn at random (seed 2026) from pairs with 3–5 reports. All 100 supporting units were exported with a verbatim snippet of the source text and the original use wording, for independent checking by two readers of the table row, identification, plant part, community attribution and use (Supplementary Data).
+Ten pairs were selected by a rule fixed in advance: the five with the most tier-A reports, and five drawn at random (seed 2026) from pairs with 3–5 reports. All 100 supporting units were exported with a verbatim snippet of the source text and the original use wording. The authors checked each unit against the original table row for plant identification, plant part, community attribution and use (Supplementary Data).
 
 ### 2.8 Completeness and availability
 **Completeness.** Incidence-based Chao2 with bias correction and log-normal 95% confidence intervals (Chao, 1987; Chao et al., 2009) estimated the number of medicinal taxa, and of taxon × condition pairs, among the 74 community-survey units. Accumulation curves were averaged over 200 random orders.
@@ -164,6 +164,8 @@ No accessible primary study was found for several major Naga communities (Sumi, 
 **Verification errors.** Source verification identified 154 records (8% of the original datasets) whose species did not occur in the cited paper. It also found one 53-record block labelled with a community that does not occur in the source.
 
 **Extent of auto-extraction.** 35% of evidence units came from tables extracted automatically for this study. For 86% of all units, the coded use was found near the plant name in the source text.
+
+**Pilot check.** All 100 units supporting the ten pilot pairs were confirmed against the original sources by the authors. The automated checks had flagged 17 of them: in some the use wording was not located near the plant name, and in others the extracted wording joined text from adjacent table rows. On inspection the plant–use claims were correct; only the extracted wording needed cleaning.
 
 ### 3.2 Recurrence exceeds chance but is fragile
 | | Tier A | Tier C |
@@ -283,7 +285,7 @@ Our congruence measure partly sidesteps the problem by comparing uses only among
 ### 4.5 Limitations
 - **The corpus is source-traced, not exhaustive.** We did not re-extract every study listed by the previous synthesis (Jha and Smith-Hall, 2023). Absolute counts would grow with more studies. The comparisons we report (between evidence tiers, against permutation nulls, and with each survey left out in turn) are relative, and are designed to remain valid as surveys are added.
 - **Condition coding uses a fixed vocabulary.** Some local concepts do not map cleanly onto biomedical conditions.
-- **Some extraction is automatic.** Automatic table extraction can carry text over from neighbouring rows. We retain the original wording and a source-verification flag for every claim, and the pilot audit sheet allows independent checking.
+- **Some extraction is automatic.** Automatic table extraction can carry text over from neighbouring rows. We retain the original wording and a source-verification flag for every claim. The pilot check was done by the authors rather than by independent readers, so no inter-reader agreement is reported; the audit sheet is published so that others can repeat it.
 - **Verification is approximate.** Our source-verification test is automatic and proximity-based. It cannot replace reading the original table.
 - **Locations are coarse.** Community locations are approximated by district centroids.
 
