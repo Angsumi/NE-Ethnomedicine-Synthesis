@@ -1,0 +1,11 @@
+# copyrighted source papers and text extracted from them
+sources/
+*.pdf
+# input datasets are fetched by scripts/fetch_inputs.sh
+NE-Ethnomedicine/
+Assam_Ethnomedicine/
+# environment
+.venv/
+__pycache__/
+*.pyc
+.claude/

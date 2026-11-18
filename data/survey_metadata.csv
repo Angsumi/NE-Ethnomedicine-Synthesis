@@ -1,0 +1,58 @@
+source_id,fieldwork_group,design,attribution,communities,state,districts,is_primary,non_st,citation_note
+S01,S01,general,single_community,Apatani,Arunachal Pradesh,Lower Subansiri,1,0,
+S02,S02,general,single_community,Mizo,Mizoram,Champhai,1,0,
+S03,S03,plant_group,single_community,Konyak Naga,Nagaland,Mon,1,0,underutilized medicinal plants only
+S04,S04,general,single_community,Angami Naga,Nagaland,Kohima,1,0,
+S05,S05,general,single_community,Karbi,Assam,Biswanath,1,0,journal: JETIR 6(4) 2019
+S06,S06,general,single_community,Sonowal Kachari,Assam,Dibrugarh,1,0,
+S07,S07,general,single_community,Deori,Assam,Lakhimpur,1,0,
+S08,S08,general,multi_community_explicit,Mishing; Moran; Assamese; Bengali,Assam,Tinsukia; Dibrugarh,1,0,communities given per plant (Asm/Mor/Mis/Ben); 17 records unresolved
+S09,S09,general,single_community,Khasi,Meghalaya,East Khasi Hills; Ri Bhoi,1,0,
+S10,S10,general,single_community,Meitei,Manipur,Imphal West; Imphal East,1,1,book chapter
+S11,S11,general,single_community,Tiwa,Assam,Morigaon,1,0,
+S12,S12,general,single_community,Tai Khamti,Arunachal Pradesh,Lohit; Namsai,1,0,
+S14,S14,general,single_community,Mishing,Assam,Golaghat; Nagaon,1,0,
+S15,S15,review,single_community,Jaintia,Meghalaya,West Jaintia Hills; East Jaintia Hills,0,0,secondary source (mini review)
+S16,S16,general,single_community,Rabha,Assam,Chirang,1,0,
+S17,S17,general,pooled,Tripuri; Reang,Tripura,West Tripura; South Tripura,1,0,
+S18,S18,general,single_community,Adi (Minyong),Arunachal Pradesh,East Siang,1,0,
+S19,S19,general,single_community,Mishmi,Arunachal Pradesh,Lohit,1,0,
+S21,S21,general,single_community,Galo,Arunachal Pradesh,West Siang,1,0,
+S22,S22,general,single_community,Garo,Assam,Kamrup Metropolitan,1,0,
+S23,S23,general,single_community,Nyishi,Arunachal Pradesh,Papum Pare,1,0,third author Rama Shankar missing from citation
+S24,S24,general,single_community,Aka (Hrusso),Arunachal Pradesh,West Kameng,1,0,
+S25,S25,general,single_community,Mishing,Assam,Sivasagar,1,0,
+S26,S26,food_and_medicine,single_community,Tagin,Arunachal Pradesh,Upper Subansiri,1,0,ethnobotanical resources (all uses)
+S27,S27,general,single_community,Bodo,Assam,Baksa,1,0,
+S28,S28,general,single_community,Rabha,Assam,Kamrup,1,0,
+S29,S29,general,single_community,Karbi,Assam,West Karbi Anglong,1,0,sacred groves
+S30,S30,plant_group,single_community,Bodo,Assam,Goalpara,1,0,leaves only
+S31,S31,general,single_community,Sonowal Kachari,Assam,Dibrugarh,1,0,
+S33,S33,single_ailment,single_community,Barman (Dimasa),Assam,Hailakandi,1,0,diabetes; Barman records only (paper also covers Hmar and Manipuri)
+N03,N03,general,single_community,Tripuri,Tripura,West Tripura; South Tripura,1,0,
+N05,N05,single_ailment,single_community,Garo,Meghalaya,West Garo Hills,1,0,bone fracture
+N06,RALTE2024,general,multi_community_explicit,Mizo; Lai; Mara; Chakma; Bru; Hmar; Bawm,Mizoram,Aizawl; Lunglei; Lawngtlai; Saiha; Mamit,1,0,authors Ralte & Singh 2024 PLoS ONE; possible fieldwork overlap with N07
+N07,RALTE2024,general,single_community,Mizo,Mizoram,Mamit,1,0,Ralte Sailo & Singh 2024 JEE; possible fieldwork overlap with N06
+N08,N08,general,single_community,Monpa,Arunachal Pradesh,Tawang,1,0,correct citation: Chakraborty T Saha S Bisht NS 2017 Plants 6:13 doi:10.3390/plants6010013
+N09,N09,general,single_community,Tangkhul Naga,Manipur,Ukhrul,1,0,
+N10,N10,general,single_community,Bishnupriya Manipuri,Tripura,Unakoti; North Tripura; Dhalai; West Tripura,1,1,
+G02,G02,general,single_community,Poumai Naga,Manipur,Senapati,1,0,
+G03,G03,general,single_community,Rongmei Naga,Manipur,Tamenglong,1,0,
+G04,G04,single_ailment,single_community,Paite,Manipur,Churachandpur,1,0,maternity care
+G09,G09,general,single_community,Nocte,Arunachal Pradesh,Tirap,1,0,
+G10,G10,food_and_medicine,single_community,Nocte,Arunachal Pradesh,Tirap,1,0,
+G13,G13,single_ailment,pooled,Tripuri; Jamatia; Halam,Tripura,West Tripura; Khowai; Gomati,1,0,jaundice
+G14,G14,food_and_medicine,single_community,Ahom,Assam,Charaideo,1,1,
+G16,G16,plant_group,single_community,Meitei,Manipur,Imphal West; Imphal East,1,1,trees in sacred groves only
+G17,G17,general,single_community,Lotha Naga,Nagaland,Wokha,1,0,
+G18,G18,general,multi_community_explicit,Apatani; Monpa; Singpho; Tangsa; Adi (Padam); Nyishi; Idu Mishmi,Arunachal Pradesh,several,1,0,communities given per plant (codes)
+G19,G19,general,single_community,Ao Naga,Nagaland,Mokokchung,1,0,
+G20,G20,general,single_community,Jaintia,Assam,Dima Hasao,1,0,
+G21,G21,general,single_community,Koch-Rajbongshi,Assam,Bongaigaon,1,1,
+G22,G22,general,single_community,Koch,Assam,South Salmara-Mankachar,1,0,
+G23,G23,single_ailment,single_community,Koch,Meghalaya,South West Garo Hills,1,0,hepatoprotective
+G25,G25,selected_ailments,single_community,Moran,Assam,Tinsukia,1,1,10 selected diseases
+G26,G26,general,pooled,Pnar; War,Meghalaya,West Jaintia Hills,1,0,
+G27,G27,general,single_community,Sangtam Naga,Nagaland,Tuensang,1,0,
+G29,G29,general,single_community,Wancho,Arunachal Pradesh,Longding,1,0,
+G33,G33,general,pooled,Senapati healers (Mao and others),Manipur,Senapati,1,0,healers from several communities

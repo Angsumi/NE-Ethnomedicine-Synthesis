@@ -1,0 +1,66 @@
+condition,regex
+diarrhoea,diarr?h?o?ea|loose motion|\bdiarr
+dysentery,dysent
+jaundice,jaundice|hepatitis|bilirubin
+liver disorder,liver|hepat(?!itis)
+stomach ache,stomach ?(ache|pain|disorder|problem|trouble|complaint)|abdominal pain|colic|gastralgia
+indigestion,indigest|dyspeps|digest(ion|ive)|flatul|bloat|carminat|appetite
+gastritis/acidity,gastri|acidity|peptic|ulcer of stomach|stomach ulcer
+constipation,constipat|laxative|purgative
+intestinal worms,worm|helminth|anthelmint|vermifug|deworm
+piles,piles|haemorrhoid|hemorrhoid
+vomiting/nausea,vomit|nausea|emesis
+cholera,cholera
+toothache/oral,tooth|dental|gum|pyorrh|mouth (ulcer|sore)|stomatitis
+wounds/cuts,wound|\bcuts?\b|injur
+burns,\bburn
+boils/abscess,\bboil|abscess|carbuncle|furuncle
+skin disease,skin|eczema|dermat|rash|pimple|acne|leucoderm|wart
+scabies/itching,scabies|itch
+fungal infection/ringworm,ringworm|fung|tinea
+leprosy,leprosy
+hair/dandruff/lice,dandruff|hair|lice
+fever,fever|pyre|febri
+malaria,malaria
+typhoid,typhoid
+pox/measles,pox|measles
+cough,cough
+common cold,\bcold\b|catarrh|nasal|sinus
+asthma,asthma
+bronchitis,bronch
+sore throat/tonsillitis,throat|tonsil|pharyng
+tuberculosis,tubercul|\btb\b|phthisis
+pneumonia,pneumon
+headache,headache|head ache|migraine
+body ache/pain,body ?ache|body pain|pain relie|analgesic|backache|back pain
+rheumatism/arthritis,rheumat|arthrit|gout|joint pain
+bone fracture,fractur|bone
+sprain/dislocation,sprain|dislocat|swelling
+inflammation,inflam
+snakebite,snake
+insect/scorpion bite,insect|scorpion|bee sting|sting|leech
+dog bite/rabies,dog bite|rabies|hydrophob
+bleeding (haemostatic),bleed|haemosta|hemosta|blood clot|stop blood
+anaemia,an(a)?emi
+hypertension,blood pressure|hypertens|\bbp\b
+heart disorder,heart|cardi
+blood purifier,blood purif|purify blood
+diabetes,diabet|blood sugar
+urinary disorder,urin|dysuria|diuret
+kidney stone,kidney stone|renal stone|calculi|\bstone
+menstrual disorder,menstru|dysmenor|period pain|menorrh
+childbirth/postpartum,delivery|child ?birth|labou?r pain|postpartum|after birth|placenta
+lactation,lactat|breast milk|milk secretion|galactag
+abortion/contraception,abort|contracept|antifertil
+leucorrhoea,leucorrh|leukorrh|white discharge
+infertility/sexual,infertil|steril|impoten|aphrodis|sexual|fertility
+gonorrhoea/STI,gonorr|syphil|venereal
+eye disorder,\beyes?\b|conjunctiv|ophthalm
+ear ache,\bears?\b|otitis|earache
+cancer/tumour,cancer|tumou?r
+epilepsy/convulsion,epilep|convuls|fits
+insomnia/mental,insomnia|sleep|mental|madness|insan
+poisoning/antidote,poison|antidote|intoxicat|hangover
+tonic/weakness,tonic|weakness|debility|vigour|energy
+goitre/thyroid,goit|thyroid
+obesity,obesity|weight loss

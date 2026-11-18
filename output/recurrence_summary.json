@@ -1,0 +1,28 @@
+{
+  "units_total": 5004,
+  "units_tierA": 4689,
+  "units_tierB": 4247,
+  "units_tierC": 3512,
+  "pairs_recurrent_A": 214,
+  "pairs_recurrent_B": 189,
+  "pairs_recurrent_C": 137,
+  "null_recurrent_A_mean": 122.74666666666667,
+  "null_recurrent_A_95pct": 135.05,
+  "perm_p_A": 0.0033222591362126247,
+  "null_recurrent_C_mean": 64.56,
+  "null_recurrent_C_95pct": 75.0,
+  "perm_p_C": 0.0033222591362126247,
+  "recurrent_A_that_survive_C": 137,
+  "recurrent_A_that_survive_leave_one_out": 116,
+  "species_recurrent_any_use": 245,
+  "design_effect_top_conditions": {
+    "jaundice": 0.476,
+    "abortion/contraception": 0.462,
+    "lactation": 0.429,
+    "childbirth/postpartum": 0.4,
+    "liver disorder": 0.393,
+    "cholera": 0.316,
+    "boils/abscess": 0.266,
+    "bone fracture": 0.254
+  }
+}
