@@ -1,0 +1,95 @@
+{
+  "assemblages": 41,
+  "pairs": 820,
+  "median_jaccard": 0.058,
+  "pairs_with_congruence": 569,
+  "median_use_congruence": 0.286,
+  "jaccard": {
+    "R2": 0.07,
+    "p_R2": 0.028,
+    "b_intercept": 0.0662,
+    "b_log_km": -0.0009,
+    "b_same_family": -0.0082,
+    "b_same_subgroup": 0.008,
+    "b_same_state": 0.0246,
+    "p_intercept": 0.468,
+    "p_log_km": 0.933,
+    "p_same_family": 0.522,
+    "p_same_subgroup": 0.303,
+    "p_same_state": 0.001
+  },
+  "use_congruence": {
+    "R2": 0.003,
+    "p_R2": 0.883,
+    "b_intercept": 0.2523,
+    "b_log_km": 0.0208,
+    "b_same_family": -0.007,
+    "b_same_subgroup": 0.0082,
+    "b_same_state": -0.0131,
+    "p_intercept": 0.693,
+    "p_log_km": 0.502,
+    "p_same_family": 0.802,
+    "p_same_subgroup": 0.742,
+    "p_same_state": 0.514
+  },
+  "jaccard_same_community_vs_other": [
+    0.076,
+    0.064
+  ],
+  "congruence_same_community_vs_other": [
+    0.21,
+    0.295
+  ],
+  "congruence_null": {
+    "mean_congruence_observed": 0.294,
+    "null_mean": 0.109,
+    "null_95pct": 0.118,
+    "perm_p": 0.004975124378109453,
+    "same_community_pairs": 6,
+    "same_vs_other_mannwhitney_p": 0.3606886470335098,
+    "same_community_pairs_list": [
+      [
+        "G18|Apatani",
+        "S01|Apatani",
+        0.027,
+        0.0
+      ],
+      [
+        "G18|Nyishi",
+        "S23|Nyishi",
+        0.111,
+        0.333
+      ],
+      [
+        "RALTE2024|Mizo",
+        "S02|Mizo",
+        0.122,
+        0.593
+      ],
+      [
+        "S05|Karbi",
+        "S29|Karbi",
+        0.117,
+        0.333
+      ],
+      [
+        "S06|Sonowal Kachari",
+        "S31|Sonowal Kachari",
+        0.061,
+        0.0
+      ],
+      [
+        "S14|Mishing",
+        "S25|Mishing",
+        0.02,
+        NaN
+      ],
+      [
+        "S16|Rabha",
+        "S28|Rabha",
+        0.075,
+        0.0
+      ]
+    ]
+  }
+}

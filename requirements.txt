@@ -8,3 +8,7 @@ seaborn
 pdfplumber
 pymupdf
 rapidocr_onnxruntime
+geopandas
+networkx
+adjustText
+python-docx

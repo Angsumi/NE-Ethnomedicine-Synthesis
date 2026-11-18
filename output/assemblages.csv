@@ -1,0 +1,42 @@
+assemblage,fieldwork_group,community,state,lat,lon,family,subgroup,n_species
+G02|Poumai Naga,G02,Poumai Naga,Manipur,25.3933697,94.1501773,Tibeto-Burman,Naga,34
+G03|Rongmei Naga,G03,Rongmei Naga,Manipur,24.9858596,93.5039967,Tibeto-Burman,Naga,52
+G09|Nocte,G09,Nocte,Arunachal Pradesh,27.030169,95.4979175,Tibeto-Burman,Konyak,21
+G17|Lotha Naga,G17,Lotha Naga,Nagaland,26.242251,94.1921153,Tibeto-Burman,Naga,48
+G18|Adi (Padam),G18,Adi (Padam),Arunachal Pradesh,28.3,95.15,Tibeto-Burman,Tani,16
+G18|Apatani,G18,Apatani,Arunachal Pradesh,27.61,93.87,Tibeto-Burman,Tani,10
+G18|Nyishi,G18,Nyishi,Arunachal Pradesh,27.29,93.62,Tibeto-Burman,Tani,10
+G19|Ao Naga,G19,Ao Naga,Nagaland,26.4795861,94.5105275,Tibeto-Burman,Naga,107
+G20|Jaintia,G20,Jaintia,Assam,25.4003625,93.0752292,Austroasiatic,Khasian,32
+G21|Koch-Rajbongshi,G21,Koch-Rajbongshi,Assam,26.4800126,90.5580387,Indo-Aryan,Bengali-Assamese,57
+G22|Koch,G22,Koch,Assam,25.7604472,89.8928061,Tibeto-Burman,Bodo-Garo,58
+G27|Sangtam Naga,G27,Sangtam Naga,Nagaland,26.2342107,94.741553,Tibeto-Burman,Naga,18
+G29|Wancho,G29,Wancho,Arunachal Pradesh,26.8794546,95.3155652,Tibeto-Burman,Konyak,12
+N03|Tripuri,N03,Tripuri,Tripura,23.54308035,91.51337555,Tibeto-Burman,Bodo-Garo,45
+N08|Monpa,N08,Monpa,Arunachal Pradesh,27.5879186,91.863733,Tibeto-Burman,Bodish,41
+N09|Tangkhul Naga,N09,Tangkhul Naga,Manipur,25.0978641,94.3610713,Tibeto-Burman,Naga,32
+N10|Bishnupriya Manipuri,N10,Bishnupriya Manipuri,Tripura,24.005945299999997,91.913081625,Indo-Aryan,Bengali-Assamese,66
+RALTE2024|Mizo,RALTE2024,Mizo,Mizoram,23.178988650000004,92.6626033,Tibeto-Burman,Kuki-Chin,179
+S01|Apatani,S01,Apatani,Arunachal Pradesh,27.6059753,93.8669707,Tibeto-Burman,Tani,141
+S02|Mizo,S02,Mizo,Mizoram,23.6317319,93.3493185,Tibeto-Burman,Kuki-Chin,70
+S04|Angami Naga,S04,Angami Naga,Nagaland,25.6618755,94.1019156,Tibeto-Burman,Naga,49
+S05|Karbi,S05,Karbi,Assam,26.7938596,93.3591936,Tibeto-Burman,Karbi,52
+S06|Sonowal Kachari,S06,Sonowal Kachari,Assam,27.4844597,94.9019447,Tibeto-Burman,Bodo-Garo,49
+S07|Deori,S07,Deori,Assam,27.1763356,94.1992932,Tibeto-Burman,Bodo-Garo,52
+S09|Khasi,S09,Khasi,Meghalaya,25.639388099999998,91.84423760000001,Austroasiatic,Khasian,50
+S10|Meitei,S10,Meitei,Manipur,24.795875000000002,93.9393112,Tibeto-Burman,Meitei,46
+S11|Tiwa,S11,Tiwa,Assam,26.252165,92.3421071,Tibeto-Burman,Bodo-Garo,43
+S12|Tai Khamti,S12,Tai Khamti,Arunachal Pradesh,27.8745234,96.0936612,Tai-Kadai,Tai,34
+S14|Mishing,S14,Mishing,Assam,26.4210954,93.36342245,Tibeto-Burman,Tani,41
+S16|Rabha,S16,Rabha,Assam,26.6464231,90.624157,Tibeto-Burman,Bodo-Garo,20
+S18|Adi (Minyong),S18,Adi (Minyong),Arunachal Pradesh,28.3,95.15,Tibeto-Burman,Tani,26
+S19|Mishmi,S19,Mishmi,Arunachal Pradesh,28.0350162,96.1713515,Tibeto-Burman,Mishmic,25
+S21|Galo,S21,Galo,Arunachal Pradesh,28.4,94.55,Tibeto-Burman,Tani,23
+S22|Garo,S22,Garo,Assam,26.2194382,91.6979354,Tibeto-Burman,Bodo-Garo,24
+S23|Nyishi,S23,Nyishi,Arunachal Pradesh,27.2863667,93.6187716,Tibeto-Burman,Tani,20
+S24|Aka (Hrusso),S24,Aka (Hrusso),Arunachal Pradesh,27.2986936,92.4741211,Tibeto-Burman,Hrusish,12
+S25|Mishing,S25,Mishing,Assam,26.9834936,94.6394226,Tibeto-Burman,Tani,10
+S27|Bodo,S27,Bodo,Assam,26.6275689,91.3388551,Tibeto-Burman,Bodo-Garo,112
+S28|Rabha,S28,Rabha,Assam,26.1468861,91.2227397,Tibeto-Burman,Bodo-Garo,37
+S29|Karbi,S29,Karbi,Assam,25.8529142,92.5875681,Tibeto-Burman,Karbi,34
+S31|Sonowal Kachari,S31,Sonowal Kachari,Assam,27.4844597,94.9019447,Tibeto-Burman,Bodo-Garo,21

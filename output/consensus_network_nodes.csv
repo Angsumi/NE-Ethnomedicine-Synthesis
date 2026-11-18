@@ -1,0 +1,96 @@
+node,kind,degree,strength,module
+Clerodendrum glandulosum,taxon,1,8,7
+hypertension,condition,4,18,7
+Ageratum conyzoides,taxon,2,20,4
+wounds/cuts,condition,13,57,4
+Houttuynia cordata,taxon,3,18,0
+dysentery,condition,13,65,0
+Psidium guajava,taxon,2,15,0
+Ocimum tenuiflorum,taxon,3,24,1
+cough,condition,8,47,1
+Catharanthus roseus,taxon,2,13,5
+diabetes,condition,5,26,5
+common cold,condition,6,32,1
+Averrhoa carambola,taxon,1,7,5
+jaundice,condition,7,30,5
+Zingiber officinale,taxon,2,11,1
+diarrhoea,condition,13,46,0
+Allium sativum,taxon,3,13,1
+Aloe vera,taxon,4,19,6
+burns,condition,2,10,6
+Justicia adhatoda,taxon,7,33,1
+Kalanchoe pinnata,taxon,4,16,3
+kidney stone,condition,1,7,3
+Cynodon dactylon,taxon,2,8,4
+bleeding (haemostatic),condition,3,11,4
+Chromolaena odorata,taxon,1,6,4
+Curcuma longa,taxon,4,16,6
+skin disease,condition,7,29,6
+Leucas aspera,taxon,1,6,1
+Senna alata,taxon,3,13,6
+Paederia foetida,taxon,3,13,0
+Syzygium cumini,taxon,1,5,5
+Spilanthes paniculata,taxon,3,10,3
+toothache/oral,condition,4,17,3
+Andrographis paniculata,taxon,4,19,2
+fever,condition,6,23,2
+Phyllanthus emblica,taxon,5,19,5
+Spilanthes acmella,taxon,1,6,3
+liver disorder,condition,1,5,2
+Centella asiatica,taxon,9,33,7
+stomach ache,condition,11,40,0
+Oroxylum indicum,taxon,5,22,0
+intestinal worms,condition,4,15,2
+Rhus chinensis,taxon,2,7,0
+Vitex negundo,taxon,1,4,3
+body ache/pain,condition,2,7,3
+Saccharum officinarum,taxon,1,3,5
+Aegle marmelos,taxon,3,14,0
+Alstonia scholaris,taxon,6,20,2
+asthma,condition,2,10,2
+gastritis/acidity,condition,3,11,7
+Drymaria cordata,taxon,1,5,1
+Hellenia speciosa,taxon,3,11,3
+urinary disorder,condition,4,14,3
+rheumatism/arthritis,condition,2,8,0
+Zanthoxylum armatum,taxon,2,8,1
+Ananas comosus,taxon,1,4,2
+malaria,condition,2,7,2
+Cajanus cajan,taxon,1,4,5
+Dillenia indica,taxon,2,7,2
+Solanum torvum,taxon,1,4,3
+fungal infection/ringworm,condition,1,3,6
+Acorus calamus,taxon,2,7,2
+cancer/tumour,condition,1,4,5
+bone fracture,condition,2,7,6
+Garcinia cowa,taxon,1,4,0
+bronchitis,condition,1,4,1
+Mentha arvensis,taxon,1,4,0
+Oxalis corniculata,taxon,5,16,0
+Rauvolfia serpentina,taxon,1,4,7
+Carica papaya,taxon,4,12,7
+Cissus quadrangularis,taxon,1,3,6
+Crassocephalum crepidioides,taxon,1,3,4
+hair/dandruff/lice,condition,1,3,2
+Melastoma malabathricum,taxon,1,3,4
+Mikania micrantha,taxon,2,6,6
+Ocimum basilicum,taxon,1,3,1
+eye disorder,condition,2,6,7
+Spondias pinnata,taxon,2,6,0
+Asparagus racemosus,taxon,1,3,8
+tonic/weakness,condition,1,3,8
+Callicarpa arborea,taxon,1,3,5
+dog bite/rabies,condition,1,3,7
+boils/abscess,condition,1,3,7
+Hedychium spicatum,taxon,1,3,0
+Lawsonia inermis,taxon,1,3,6
+Mikania cordata,taxon,1,3,4
+Mimosa pudica,taxon,2,6,3
+Murraya koenigii,taxon,2,6,0
+indigestion,condition,1,3,0
+Musa paradisiaca,taxon,1,3,0
+headache,condition,1,3,0
+Peperomia pellucida,taxon,1,3,2
+Piper betle,taxon,1,3,4
+Piper nigrum,taxon,1,3,4
+Terminalia chebula,taxon,1,3,1

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "NE India Ethnomedicine: a source-traced evidence synthesis of medicinal plant use across Northeast India"
+type: software
+authors:
+  - family-names: Das
+    given-names: Angsuman
+    orcid: "https://orcid.org/0000-0001-8146-7697"
+    affiliation: "Pachhunga University College, Mizoram University"
+  - family-names: Prasad
+    given-names: Ananda
+    orcid: "https://orcid.org/0009-0005-1736-8148"
+    affiliation: "Rajiv Gandhi University"
+repository-code: "https://github.com/Angsumi/NE-Ethnomedicine-Synthesis"
+license: MIT
+keywords: [ethnobotany, ethnopharmacology, evidence synthesis, Northeast India, traditional medicine, medicinal plants]
+date-released: 2026-11-18
+version: "1.0.0"

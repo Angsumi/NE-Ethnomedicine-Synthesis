@@ -9,3 +9,5 @@ Assam_Ethnomedicine/
 __pycache__/
 *.pyc
 .claude/
+data/external/
+!output/figures/pub/*.pdf

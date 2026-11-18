@@ -1,6 +1,6 @@
-# Protocol (draft for OSF registration)
+# Methods specification
 
-Status: draft, 2026-11-18. Items marked **[fixed]** were set before the pilot output was inspected; register them unchanged.
+Status: 2026-11-18. Items marked **[fixed]** were set before the pilot output was inspected.
 
 ## 1. Review question
 Which medicinal plant uses recur across independently documented communities in the seven northeastern states of India (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura), and how much does recurrence depend on survey design, community attribution, reused fieldwork, and use coding?
