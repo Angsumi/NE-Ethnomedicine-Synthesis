@@ -1,0 +1,12 @@
+{
+  "title": "NE India Ethnomedicine: a source-traced evidence synthesis of medicinal plant use across Northeast India",
+  "upload_type": "software",
+  "description": "Code, source-traced dataset (2,742 records from 57 field studies; 5,004 independent evidence units), verification logs, analyses and figures for a synthesis of which medicinal plant uses recur across independently documented communities in the seven northeastern states of India. Source publications are cited, not redistributed.",
+  "creators": [
+    {"name": "Das, Angsuman", "affiliation": "Pachhunga University College, Mizoram University", "orcid": "0000-0001-8146-7697"},
+    {"name": "Prasad, Ananda", "affiliation": "Rajiv Gandhi University", "orcid": "0009-0005-1736-8148"}
+  ],
+  "license": "MIT",
+  "keywords": ["ethnobotany", "ethnopharmacology", "evidence synthesis", "Northeast India", "traditional medicine", "medicinal plants"],
+  "access_right": "open"
+}

@@ -1,0 +1,137 @@
+taxon,condition,C,A
+Clerodendrum glandulosum,hypertension,8,20
+Ageratum conyzoides,wounds/cuts,16,19
+Houttuynia cordata,dysentery,11,15
+Psidium guajava,dysentery,9,14
+Ocimum tenuiflorum,cough,12,12
+Catharanthus roseus,diabetes,9,10
+Ocimum tenuiflorum,common cold,9,9
+Averrhoa carambola,jaundice,7,9
+Zingiber officinale,cough,7,9
+Psidium guajava,diarrhoea,6,9
+Allium sativum,cough,7,8
+Aloe vera,burns,7,8
+Justicia adhatoda,cough,7,8
+Kalanchoe pinnata,kidney stone,7,8
+Cynodon dactylon,bleeding (haemostatic),4,8
+Chromolaena odorata,wounds/cuts,6,7
+Curcuma longa,skin disease,6,7
+Leucas aspera,common cold,6,7
+Senna alata,skin disease,6,7
+Aloe vera,skin disease,5,7
+Paederia foetida,diarrhoea,5,7
+Syzygium cumini,diabetes,5,7
+Spilanthes paniculata,toothache/oral,4,7
+Andrographis paniculata,fever,6,6
+Phyllanthus emblica,diabetes,6,6
+Spilanthes acmella,toothache/oral,6,6
+Andrographis paniculata,liver disorder,5,6
+Centella asiatica,dysentery,5,6
+Centella asiatica,stomach ache,5,6
+Justicia adhatoda,common cold,5,6
+Justicia adhatoda,dysentery,5,6
+Oroxylum indicum,jaundice,5,6
+Paederia foetida,dysentery,5,6
+Andrographis paniculata,intestinal worms,4,6
+Phyllanthus emblica,jaundice,4,6
+Rhus chinensis,dysentery,4,6
+Vitex negundo,body ache/pain,4,6
+Saccharum officinarum,jaundice,3,6
+Aegle marmelos,dysentery,5,5
+Aegle marmelos,stomach ache,5,5
+Alstonia scholaris,asthma,5,5
+Centella asiatica,gastritis/acidity,5,5
+Drymaria cordata,common cold,5,5
+Hellenia speciosa,urinary disorder,5,5
+Justicia adhatoda,asthma,5,5
+Oroxylum indicum,rheumatism/arthritis,5,5
+Zanthoxylum armatum,cough,5,5
+Ageratum conyzoides,bleeding (haemostatic),4,5
+Ananas comosus,intestinal worms,4,5
+Andrographis paniculata,malaria,4,5
+Cajanus cajan,jaundice,4,5
+Dillenia indica,fever,4,5
+Houttuynia cordata,stomach ache,4,5
+Oroxylum indicum,diarrhoea,4,5
+Oroxylum indicum,dysentery,4,5
+Senna alata,intestinal worms,4,5
+Solanum torvum,toothache/oral,4,5
+Zingiber officinale,common cold,4,5
+Hellenia speciosa,jaundice,3,5
+Houttuynia cordata,urinary disorder,3,5
+Phyllanthus emblica,diarrhoea,3,5
+Rhus chinensis,diarrhoea,3,5
+Senna alata,fungal infection/ringworm,3,5
+Acorus calamus,fever,4,4
+Aegle marmelos,diarrhoea,4,4
+Aloe vera,wounds/cuts,4,4
+Catharanthus roseus,cancer/tumour,4,4
+Curcuma longa,bone fracture,4,4
+Cynodon dactylon,wounds/cuts,4,4
+Garcinia cowa,dysentery,4,4
+Justicia adhatoda,bronchitis,4,4
+Justicia adhatoda,jaundice,4,4
+Mentha arvensis,stomach ache,4,4
+Oroxylum indicum,stomach ache,4,4
+Oxalis corniculata,dysentery,4,4
+Rauvolfia serpentina,hypertension,4,4
+Allium sativum,skin disease,3,4
+Alstonia scholaris,diarrhoea,3,4
+Alstonia scholaris,dysentery,3,4
+Alstonia scholaris,malaria,3,4
+Carica papaya,diabetes,3,4
+Carica papaya,gastritis/acidity,3,4
+Carica papaya,intestinal worms,3,4
+Centella asiatica,hypertension,3,4
+Centella asiatica,skin disease,3,4
+Centella asiatica,wounds/cuts,3,4
+Cissus quadrangularis,bone fracture,3,4
+Crassocephalum crepidioides,wounds/cuts,3,4
+Curcuma longa,wounds/cuts,3,4
+Dillenia indica,hair/dandruff/lice,3,4
+Justicia adhatoda,diarrhoea,3,4
+Kalanchoe pinnata,burns,3,4
+Kalanchoe pinnata,urinary disorder,3,4
+Melastoma malabathricum,wounds/cuts,3,4
+Mikania micrantha,skin disease,3,4
+Mikania micrantha,wounds/cuts,3,4
+Ocimum basilicum,cough,3,4
+Ocimum tenuiflorum,eye disorder,3,4
+Phyllanthus emblica,hypertension,3,4
+Spondias pinnata,dysentery,3,4
+Zanthoxylum armatum,fever,3,4
+Acorus calamus,cough,3,3
+Allium sativum,common cold,3,3
+Aloe vera,stomach ache,3,3
+Alstonia scholaris,gastritis/acidity,3,3
+Alstonia scholaris,wounds/cuts,3,3
+Asparagus racemosus,tonic/weakness,3,3
+Callicarpa arborea,diabetes,3,3
+Carica papaya,dog bite/rabies,3,3
+Centella asiatica,boils/abscess,3,3
+Centella asiatica,diarrhoea,3,3
+Centella asiatica,eye disorder,3,3
+Curcuma longa,diarrhoea,3,3
+Hedychium spicatum,stomach ache,3,3
+Hellenia speciosa,stomach ache,3,3
+Kalanchoe pinnata,dysentery,3,3
+Lawsonia inermis,skin disease,3,3
+Mikania cordata,wounds/cuts,3,3
+Mimosa pudica,toothache/oral,3,3
+Mimosa pudica,wounds/cuts,3,3
+Murraya koenigii,indigestion,3,3
+Murraya koenigii,stomach ache,3,3
+Musa paradisiaca,diarrhoea,3,3
+Oxalis corniculata,diarrhoea,3,3
+Oxalis corniculata,fever,3,3
+Oxalis corniculata,headache,3,3
+Oxalis corniculata,stomach ache,3,3
+Paederia foetida,rheumatism/arthritis,3,3
+Peperomia pellucida,fever,3,3
+Phyllanthus emblica,stomach ache,3,3
+Piper betle,wounds/cuts,3,3
+Piper nigrum,bleeding (haemostatic),3,3
+Spilanthes paniculata,body ache/pain,3,3
+Spilanthes paniculata,urinary disorder,3,3
+Spondias pinnata,diarrhoea,3,3
+Terminalia chebula,cough,3,3

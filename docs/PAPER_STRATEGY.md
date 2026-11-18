@@ -34,7 +34,7 @@ Taken together:
 Both halves are publishable. The paper should lead with what survives, and why.
 
 ## 3. Additions (ranked by how much they raise the ceiling)
-1. **Pre-register the protocol on OSF** before the systematic re-search, including the counting unit, tiers, MIN_REC = 3, the pilot rule and the null model. Report the search with PRISMA 2020 + PRISMA-S; for an ecology or ethnobiology venue, also ROSES.
+1. **Report the search transparently** (PRISMA 2020 + PRISMA-S; ROSES for an ecology venue): counting unit, tiers, MIN_REC = 3, pilot rule and null model were fixed before the pilot output was inspected (see `docs/METHODS.md`).
 2. **A systematic re-search, to replace the convenience corpus.** The Jha & Smith-Hall crosswalk already lists 135 studies they reviewed that we haven't screened (`output/jha2023_study_crosswalk.csv`). Two independent screeners, with κ reported.
 3. **A two-reader source audit** of the claims that drive the headline result. Start with the 100 units in `output/pilot_trace.xlsx`, then all tier-C recurrent pairs. Report agreement for: row found, identification, part, community attribution, and same specific use. Keep the original wording next to the harmonised condition.
 4. **Link reused fieldwork** in `data/survey_metadata.csv` (`fieldwork_group`): theses vs papers, the same team publishing twice (e.g. N06/N07). Add field dates and villages where the papers give them.

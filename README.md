@@ -1,5 +1,11 @@
 # NE India Ethnomedicine — evidence synthesis
 
+**Authors:** Angsuman Das (Pachhunga University College, Mizoram University; ORCID [0000-0001-8146-7697](https://orcid.org/0000-0001-8146-7697)) and
+Ananda Prasad (Rajiv Gandhi University; ORCID [0009-0005-1736-8148](https://orcid.org/0009-0005-1736-8148)).
+
+**Manuscript draft:** [`docs/manuscript/manuscript.md`](docs/manuscript/manuscript.md) (also `.docx`) · figures in [`output/figures/pub/`](output/figures/pub/) ·
+cite via [`CITATION.cff`](CITATION.cff) · licence: MIT (code), CC BY 4.0 (data, figures, documents)
+
 Source-traced synthesis of published ethnomedicinal plant records from the seven northeastern states of India
 (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura).
 
@@ -7,7 +13,7 @@ Source-traced synthesis of published ethnomedicinal plant records from the seven
 that depend on how the original surveys were done?
 
 - Paper strategy and preliminary results: [`docs/PAPER_STRATEGY.md`](docs/PAPER_STRATEGY.md)
-- Protocol (draft for OSF registration): [`docs/PROTOCOL.md`](docs/PROTOCOL.md)
+- Methods specification: [`docs/METHODS.md`](docs/METHODS.md)
 - Data dictionary: [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md)
 - Source verification history: [`output/VERIFICATION_REPORT.md`](output/VERIFICATION_REPORT.md), coverage: [`output/COVERAGE_AND_QUALITY_PLAN.md`](output/COVERAGE_AND_QUALITY_PLAN.md)
 
@@ -39,6 +45,11 @@ Scripts 13–18 run from the derived files in `output/` and `data/`. They don't 
 | `analysis/16_pilot_trace.py` | 10-pair pilot with source snippets and two-reader audit sheet |
 | `analysis/17_availability.py` | GBIF occurrence availability proxy and use-specificity test |
 | `analysis/18_crosswalk_jha2023.py` | bibliography and species crosswalk with Jha & Smith-Hall 2023 |
+| `analysis/19_geocode_districts.py` | district coordinates (OpenStreetMap Nominatim; cached in `data/district_coords.csv`) |
+| `analysis/20_similarity.py` | plant overlap and use congruence vs distance, language, state (MRM; permutation nulls) |
+| `analysis/21_completeness_network.py` | Chao2 completeness, accumulation curves, consensus network |
+| `analysis/22_figures.py` | publication figures (PNG/PDF) |
+| `analysis/23_supplementary_and_docx.py` | Supplementary Table S1 and Word manuscript |
 | `data/survey_metadata.csv` | per-source design, attribution, fieldwork group, communities, districts |
 | `output/` | derived datasets, figures, reports |
 

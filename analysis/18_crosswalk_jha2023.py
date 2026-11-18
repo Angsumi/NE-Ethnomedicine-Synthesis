@@ -1,4 +1,4 @@
-"""Crosswalk with Jha & Smith-Hall 2023 (Ethnobotany Research and Applications 25:?; 255 publications on NE India).
+"""Crosswalk with Jha & Smith-Hall 2023 (Ethnobotany Research and Applications 26:7; 255 publications on NE India).
 
 1. Bibliography: their Supplementary Table 1 (study list, author-year) vs our sources -> overlap, studies they
    reviewed that we have not screened (candidate additions), and our sources absent from their review.
