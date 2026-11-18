@@ -54,5 +54,5 @@ Scripts 13–18 run from the derived files in `output/` and `data/`. They don't 
 | `output/` | derived datasets, figures, reports |
 
 ## Not included
-- **Source PDFs and their extracted text** (copyright). `sources/` is git-ignored.
+- **Source PDFs and their extracted text** (copyright). They are kept in a private companion repository and are available to editors and reviewers on request. `sources/` is git-ignored here.
 - **Licence and data release:** to be decided with co-authors after community review (CARE principles).
