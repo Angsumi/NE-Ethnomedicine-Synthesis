@@ -1,0 +1,32 @@
+{
+  "title": "Agreement, not popularity: a source-traced synthesis of which medicinal plant uses recur across independently documented communities of Northeast India",
+  "article_type": "Research Article",
+  "abstract": "Species popularity and agreement on a specific medicinal use measure different aspects of plant knowledge. We tested how source checking, survey design, and counting rules change apparent agreement in a selected corpus from seven northeastern Indian states. The corpus contains 2,742 records from 56 primary studies and one review; review records were excluded from primary-evidence analyses. We counted plant\u2013condition support by community\u2013campaign reports, distinct communities, and distinct campaigns, and compared recurrence with within-survey null models preserving plant and condition totals. Across primary reports, 214 pairs recurred at least three times, compared with 138 expected under the null. Counting each campaign once retained 202 pairs. Restricting evidence to explicit community attribution, general surveys, and automated source-proximity checks retained 137 pairs, compared with 72 expected. Only 116 of the original 214 pairs survived removal of any one campaign. Among plants shared by community-surveys, use congruence was 2.5 times its null expectation; no geographic or linguistic association was detected. These results distinguish cultural reach from use-specific agreement and show how survey design and source handling shape comparative ethnobotanical inference.",
+  "keywords": [
+    "ethnobotany",
+    "medicinal plants",
+    "cultural consensus",
+    "Northeast India",
+    "survey design",
+    "evidence synthesis"
+  ],
+  "authors": [
+    {
+      "name": "Angsuman Das",
+      "email": "angsuman.das@rgu.ac.in",
+      "orcid": "0000-0001-8146-7697",
+      "affiliation": "Pachhunga University College, Mizoram University, Aizawl, Mizoram, India",
+      "corresponding": true
+    },
+    {
+      "name": "Ananda Prasad",
+      "email": "anandaprasad01@gmail.com",
+      "orcid": "0009-0005-1736-8148",
+      "affiliation": "Rajiv Gandhi University, Rono Hills, Doimukh, Arunachal Pradesh, India",
+      "corresponding": false
+    }
+  ],
+  "publishing_route": "Subscription",
+  "word_count": 5812,
+  "abstract_word_count": 176
+}
