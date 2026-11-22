@@ -7,8 +7,13 @@
 2. Species level: independent community reports (tier A, any use) ~ log(occurrences) - Spearman + negative binomial GLM.
    Species far above the fit are shared more widely than their recorded presence predicts.
 3. Use specificity: for each taxon x condition, binomial tail P(X >= reports | n = reports of that taxon for any use,
-   p = share of that condition among all tier-A units), Benjamini-Hochberg corrected. A significant pair is a use that
-   communities converge on more than the plant's general popularity and the condition's general frequency imply.
+   p = baseline), Benjamini-Hochberg corrected. A significant pair is a use that communities converge on more than
+   the plant's general popularity and the condition's general frequency imply.
+   Revision (point 4): trials and baseline now use the same sampling unit. A trial is one (report, plant) combination,
+   report = community x campaign; the baseline p is the share of ALL (report, plant) combinations that cite the
+   condition. (The original baseline was the condition's share of plant x condition units, a different denominator.)
+   Sensitivity: the same test with campaign as the unit (each fieldwork campaign counted once per plant and per
+   plant x condition), which removes the dependence among communities documented by one campaign.
 
 Usage: .venv/bin/python analysis/17_availability.py
 Writes data/gbif_ne_occurrences.csv (cache), output/availability_species.csv, output/use_specificity.csv, figures
@@ -67,24 +72,40 @@ def main():
     sp = sp.sort_values("pearson_resid", ascending=False)
     sp.to_csv(ROOT / "output/availability_species.csv")
 
-    # use specificity beyond popularity
-    base = A.groupby("condition").report.size() / len(A)
-    pairs = A.groupby(["accepted_species", "condition"]).report.nunique().rename("pair_reports").reset_index()
-    pairs["species_reports"] = pairs.accepted_species.map(sp.reports)
-    pairs["p_condition"] = pairs.condition.map(base)
-    pairs = pairs.dropna()
-    pairs["p_binom"] = stats.binom.sf(pairs.pair_reports - 1, pairs.species_reports.astype(int), pairs.p_condition)
+    # use specificity beyond popularity: one sampling unit throughout
     from statsmodels.stats.multitest import multipletests
-    pairs["q_bh"] = multipletests(pairs.p_binom, method="fdr_bh")[1]
-    pairs["specificity_ratio"] = (pairs.pair_reports / pairs.species_reports) / pairs.p_condition
-    pairs = pairs.sort_values("q_bh")
+
+    def specificity(unit_col):
+        rp = A[[unit_col, "accepted_species", "condition"]].drop_duplicates()
+        n_rp = rp[[unit_col, "accepted_species"]].drop_duplicates().shape[0]          # all (unit, plant) trials
+        base = rp.groupby("condition")[[unit_col, "accepted_species"]].apply(lambda d: len(d.drop_duplicates())) / n_rp
+        sp_n = rp.groupby("accepted_species")[unit_col].nunique()
+        pr = rp.groupby(["accepted_species", "condition"])[unit_col].nunique().rename("pair_reports").reset_index()
+        pr["species_reports"] = pr.accepted_species.map(sp_n)
+        pr["p_condition"] = pr.condition.map(base)
+        pr = pr[pr.accepted_species.isin(sp.index)].dropna()
+        pr["p_binom"] = stats.binom.sf(pr.pair_reports - 1, pr.species_reports.astype(int), pr.p_condition)
+        pr["q_bh"] = multipletests(pr.p_binom, method="fdr_bh")[1]
+        pr["specificity_ratio"] = (pr.pair_reports / pr.species_reports) / pr.p_condition
+        return pr.sort_values("q_bh")
+
+    A = A.assign(campaign=A.fieldwork_group)
+    pairs = specificity("report")
+    camp = specificity("campaign")
+    pairs = pairs.merge(camp[["accepted_species", "condition", "pair_reports", "species_reports", "q_bh"]]
+                        .rename(columns={"pair_reports": "pair_campaigns", "species_reports": "species_campaigns", "q_bh": "q_bh_campaign"}),
+                        on=["accepted_species", "condition"], how="left")
     pairs.to_csv(ROOT / "output/use_specificity.csv", index=False)
     sig = pairs[(pairs.q_bh < 0.05) & (pairs.pair_reports >= 3)]
+    sig_camp = pairs[(pairs.q_bh_campaign < 0.05) & (pairs.pair_campaigns >= 3)]
 
     out = {"species_tested": len(sp), "spearman_rho_reports_vs_log_occurrences": round(float(rho), 3), "spearman_p": float(p),
            "nb_coef_log_occ": round(float(nb.params["log_occ"]), 3), "nb_p_log_occ": float(nb.pvalues["log_occ"]),
            "species_with_zero_ne_gbif_records": int((sp.ne_occurrences == 0).sum()),
-           "use_specific_pairs_q05_min3": len(sig)}
+           "use_specific_pairs_q05_min3": len(sig),
+           "use_specific_pairs_q05_min3_campaign_unit": len(sig_camp),
+           "use_specific_pairs_significant_under_both": int(len(set(zip(sig.accepted_species, sig.condition)) & set(zip(sig_camp.accepted_species, sig_camp.condition)))),
+           "specificity_trial_unit": "(community x campaign report, plant); baseline = share of all such trials citing the condition"}
     print(json.dumps(out, indent=2))
     (ROOT / "output/availability_summary.json").write_text(json.dumps(out, indent=2))
     print("\nShared more widely than recorded presence predicts:")

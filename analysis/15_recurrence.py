@@ -11,8 +11,15 @@ Evidence tiers (each is a subset of the previous):
 Also computed:
   - agreement ladder: species -> species+condition -> species+condition+same plant part
   - leave-one-fieldwork-group-out minimum (does recurrence rest on one survey?)
-  - permutation null: shuffle conditions among a survey's own units (keeps each survey's ailment profile and each
-    survey's species list) and count how many taxon x condition pairs reach >= 3 independent reports by chance
+  - permutation nulls, 999 draws each, counting how many taxon x condition pairs reach >= 3 reports by chance:
+      shuffle    : the original null, conditions shuffled among a survey's own units, then duplicates dropped
+                   (keeps each survey's species list but NOT the number of distinct uses per plant)
+      curveball  : margin-preserving null. Within every report (community x campaign) the plant x condition
+                   incidence matrix is randomised by curveball swaps, which keeps each plant's number of conditions
+                   and each condition's number of plants in that report exactly (Strona et al. 2014)
+  - replication units (revision): a pair's support counted as distinct community x campaign reports (main),
+    distinct communities (repeat surveys of one community count once), and distinct fieldwork campaigns
+    (a multi-community campaign counts once: the conservative definition)
   - design effect: how much single-ailment / plant-group surveys add to each condition
 
 Usage: .venv/bin/python analysis/15_recurrence.py
@@ -22,11 +29,15 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from nulls import BlockCurveball, perm_p
 
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "output/figures"; FIG.mkdir(parents=True, exist_ok=True)
 RNG = np.random.default_rng(2026)
 MIN_REC = 3          # "recurrent" = at least 3 independent reports (fixed before looking at results)
+N_PERM = 999
+# spelling variants of one community, merged for the distinct-community count
+COMMUNITY_ALIAS = {"Mizo (Lushai)": "Mizo", "Mizo (various)": "Mizo", "Bru (Reang)": "Bru"}
 
 
 def tiers(u):
@@ -36,13 +47,35 @@ def tiers(u):
     return {"A": A, "B": B, "C": C}
 
 
-def count_reports(df):
-    df = df.assign(report=df.fieldwork_group + "|" + df.community)
-    return df.groupby(["taxon", "condition"]).report.nunique()
+def count_reports(df, unit="report"):
+    """Support per taxon x condition. unit: report (campaign x community), community, or campaign."""
+    if unit == "report":
+        key = df.fieldwork_group + "|" + df.community
+    elif unit == "community":
+        key = df.community.replace(COMMUNITY_ALIAS)
+    else:
+        key = df.fieldwork_group
+    return df.assign(key=key).groupby(["taxon", "condition"]).key.nunique()
 
 
-def null_recurrent(units, n_perm=300):
-    """Shuffle condition labels among each fieldwork group's own units."""
+def null_curveball(units, n_perm=N_PERM, units_to_count=("report", "campaign")):
+    """Margin-preserving null: curveball swaps within each report's plant x condition matrix."""
+    base = units[["fieldwork_group", "community", "taxon", "condition"]].drop_duplicates()
+    blocks = {}
+    for (g, c, t), cond in base.groupby(["fieldwork_group", "community", "taxon"]).condition:
+        blocks.setdefault((g, c), {})[t] = set(cond)
+    chain = BlockCurveball(blocks, RNG)
+    out = {k: [] for k in units_to_count}
+    for _ in range(n_perm):
+        sh = pd.DataFrame([(b[0], b[1], t, c) for b, t, c in chain.sample()],
+                          columns=["fieldwork_group", "community", "taxon", "condition"])
+        for k in units_to_count:
+            out[k].append(int((count_reports(sh, k) >= MIN_REC).sum()))
+    return {k: np.array(v) for k, v in out.items()}
+
+
+def null_recurrent(units, n_perm=N_PERM):
+    """Original null: shuffle condition labels among each fieldwork group's own units, then drop duplicates."""
     out = []
     base = units[["fieldwork_group", "community", "taxon", "condition"]].reset_index(drop=True)
     for _ in range(n_perm):
@@ -58,6 +91,11 @@ def main():
     T = tiers(u)
     counts = {k: count_reports(v) for k, v in T.items()}
     pairs = pd.concat(counts, axis=1).fillna(0).astype(int).reset_index()
+    # replication units for tier A (revision point 2)
+    repl = pd.concat({"A_communities": count_reports(T["A"], "community"),
+                      "A_campaigns": count_reports(T["A"], "campaign"),
+                      "C_campaigns": count_reports(T["C"], "campaign")}, axis=1).fillna(0).astype(int).reset_index()
+    pairs = pairs.merge(repl, on=["taxon", "condition"], how="left").fillna(0)
 
     # species-level recurrence (any medicinal use), for the agreement ladder
     A = T["A"].assign(report=lambda x: x.fieldwork_group + "|" + x.community)
@@ -83,9 +121,14 @@ def main():
     pairs = pairs.sort_values(["A", "C"], ascending=False)
     pairs.to_csv(ROOT / "output/recurrence_pairs.csv", index=False)
 
-    # permutation null (tier A and tier C)
+    # permutation nulls (tier A and tier C)
     nullA, nullC = null_recurrent(T["A"]), null_recurrent(T["C"])
+    cbA, cbC = null_curveball(T["A"]), null_curveball(T["C"])
     obsA, obsC = int((pairs.A >= MIN_REC).sum()), int((pairs.C >= MIN_REC).sum())
+    obsA_camp, obsC_camp = int((pairs.A_campaigns >= MIN_REC).sum()), int((pairs.C_campaigns >= MIN_REC).sum())
+    np.savez(ROOT / "output/recurrence_nulls.npz", shuffle_A=nullA, shuffle_C=nullC, curveball_A=cbA["report"],
+             curveball_C=cbC["report"], curveball_A_campaign=cbA["campaign"], curveball_C_campaign=cbC["campaign"])
+    recA = pairs[pairs.A >= MIN_REC]
 
     # design effect per condition: share of tier-A reports coming from non-general designs
     des = T["A"].assign(nongen=T["A"].design != "general").groupby("condition").nongen.mean().sort_values(ascending=False)
@@ -94,9 +137,29 @@ def main():
         "units_total": len(u), "units_tierA": len(T["A"]), "units_tierB": len(T["B"]), "units_tierC": len(T["C"]),
         "pairs_recurrent_A": obsA, "pairs_recurrent_B": int((pairs.B >= MIN_REC).sum()), "pairs_recurrent_C": obsC,
         "null_recurrent_A_mean": float(nullA.mean()), "null_recurrent_A_95pct": float(np.percentile(nullA, 95)),
-        "perm_p_A": float((np.sum(nullA >= obsA) + 1) / (len(nullA) + 1)),
+        "perm_p_A": perm_p(nullA, obsA),
         "null_recurrent_C_mean": float(nullC.mean()), "null_recurrent_C_95pct": float(np.percentile(nullC, 95)),
-        "perm_p_C": float((np.sum(nullC >= obsC) + 1) / (len(nullC) + 1)),
+        "perm_p_C": perm_p(nullC, obsC),
+        "n_permutations": N_PERM,
+        "curveball_null": {
+            "A_report": {"observed": obsA, "null_mean": float(cbA["report"].mean()), "null_95pct": float(np.percentile(cbA["report"], 95)),
+                         "null_max": int(cbA["report"].max()), "perm_p": perm_p(cbA["report"], obsA)},
+            "C_report": {"observed": obsC, "null_mean": float(cbC["report"].mean()), "null_95pct": float(np.percentile(cbC["report"], 95)),
+                         "null_max": int(cbC["report"].max()), "perm_p": perm_p(cbC["report"], obsC)},
+            "A_campaign": {"observed": obsA_camp, "null_mean": float(cbA["campaign"].mean()), "null_95pct": float(np.percentile(cbA["campaign"], 95)),
+                           "null_max": int(cbA["campaign"].max()), "perm_p": perm_p(cbA["campaign"], obsA_camp)},
+            "C_campaign": {"observed": obsC_camp, "null_mean": float(cbC["campaign"].mean()), "null_95pct": float(np.percentile(cbC["campaign"], 95)),
+                           "null_max": int(cbC["campaign"].max()), "perm_p": perm_p(cbC["campaign"], obsC_camp)},
+        },
+        "replication_units": {
+            "recurrent_A_by_report": obsA,
+            "recurrent_A_by_distinct_community": int((pairs.A_communities >= MIN_REC).sum()),
+            "recurrent_A_by_distinct_campaign": obsA_camp,
+            "recurrent_A_by_report_AND_campaign": int(((pairs.A >= MIN_REC) & (pairs.A_campaigns >= MIN_REC)).sum()),
+            "recurrent_A_with_fewer_than_3_campaigns": int((recA.A_campaigns < MIN_REC).sum()),
+            "recurrent_A_with_fewer_than_3_communities": int((recA.A_communities < MIN_REC).sum()),
+            "recurrent_C_by_report": obsC, "recurrent_C_by_distinct_campaign": obsC_camp,
+        },
         "recurrent_A_that_survive_C": int(((pairs.A >= MIN_REC) & (pairs.C >= MIN_REC)).sum()),
         "recurrent_A_that_survive_leave_one_out": int((pairs.A_leave_one_out_min >= MIN_REC).sum()),
         "species_recurrent_any_use": int((sp_level >= MIN_REC).sum()),

@@ -3,6 +3,11 @@
 1. Completeness: incidence-based accumulation over independent assemblages (fieldwork group x community, tier A),
    Chao2 estimator with bias correction and 95% log-normal CI (Chao 1987; Chao et al. 2009), for taxa and for
    taxon x condition pairs. Per state as well.
+   Revision (point 5): exploratory only. Chao2 assumes exchangeable sampling units of comparable effort drawn from one
+   region; this corpus mixes general and targeted surveys, pooled multi-community units and very unequal effort.
+   Sensitivity: the estimate under alternative unit definitions and subsets (general design only, explicit
+   attribution only, tier C, campaign as unit, units with >= 20 taxa, large surveys trimmed), plus a
+   leave-one-unit-out range, so readers can see how much the "% documented" moves with design choices.
 2. Consensus network: bipartite graph of taxa and conditions for tier-C recurrent pairs (>= 3 independent reports),
    with modules (greedy modularity) to show which plants form shared therapeutic clusters.
 
@@ -59,6 +64,27 @@ def main():
         if inc.shape[0] >= 3:
             out["taxa_by_state"][st] = chao2(inc)
     pd.concat(curves).to_csv(ROOT / "output/accumulation_curves.csv", index=False)
+
+    # ---- sensitivity of Chao2 to survey design, effort and attribution ----
+    def chao_taxa(df, unit="unit"):
+        inc = pd.crosstab(df[unit], df.taxon).values > 0
+        return chao2(inc)
+    size = A.groupby("unit").taxon.nunique()
+    sens = {
+        "all_tierA_units (main)": chao_taxa(A),
+        "general_design_only": chao_taxa(A[A.design == "general"]),
+        "explicit_attribution_only": chao_taxa(A[A.attribution != "pooled"]),
+        "tierC_general_explicit_verified": chao_taxa(A[(A.design == "general") & (A.attribution != "pooled") & A.use_found_in_source]),
+        "campaign_as_unit": chao_taxa(A, unit="fieldwork_group"),
+        "units_with_ge20_taxa": chao_taxa(A[A.unit.isin(size[size >= 20].index)]),
+        "drop_5_largest_units": chao_taxa(A[~A.unit.isin(size.nlargest(5).index)]),
+    }
+    loo = [chao_taxa(A[A.unit != k])["chao2"] for k in size.index]
+    comp_vals = [v["completeness"] for v in sens.values()]
+    out["taxa_sensitivity"] = sens
+    out["taxa_leave_one_unit_out"] = {"chao2_min": float(min(loo)), "chao2_max": float(max(loo))}
+    out["taxa_completeness_range_across_definitions"] = [min(comp_vals), max(comp_vals)]
+    out["note"] = "Exploratory richness estimates under exchangeable-unit assumptions; not a measured share of the regional flora."
 
     pairs = pd.read_csv(ROOT / "output/recurrence_pairs.csv")
     rec = pairs[(pairs.C >= 3) & ~pairs.taxon.str.contains("unresolved")]

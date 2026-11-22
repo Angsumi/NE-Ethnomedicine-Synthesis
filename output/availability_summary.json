@@ -5,5 +5,8 @@
   "nb_coef_log_occ": 0.738,
   "nb_p_log_occ": 5.30927251651046e-54,
   "species_with_zero_ne_gbif_records": 277,
-  "use_specific_pairs_q05_min3": 137
+  "use_specific_pairs_q05_min3": 72,
+  "use_specific_pairs_q05_min3_campaign_unit": 69,
+  "use_specific_pairs_significant_under_both": 68,
+  "specificity_trial_unit": "(community x campaign report, plant); baseline = share of all such trials citing the condition"
 }

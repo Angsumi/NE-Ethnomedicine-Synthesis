@@ -91,6 +91,87 @@
       "completeness": 0.361
     }
   },
+  "taxa_sensitivity": {
+    "all_tierA_units (main)": {
+      "units": 74,
+      "observed": 956,
+      "uniques": 567,
+      "duplicates": 144,
+      "chao2": 2047.7,
+      "ci_low": 1816.6,
+      "ci_high": 2340.8,
+      "completeness": 0.467
+    },
+    "general_design_only": {
+      "units": 62,
+      "observed": 886,
+      "uniques": 532,
+      "duplicates": 131,
+      "chao2": 1938.8,
+      "ci_low": 1708.4,
+      "ci_high": 2233.7,
+      "completeness": 0.457
+    },
+    "explicit_attribution_only": {
+      "units": 69,
+      "observed": 904,
+      "uniques": 546,
+      "duplicates": 144,
+      "chao2": 1915.2,
+      "ci_low": 1699.0,
+      "ci_high": 2190.2,
+      "completeness": 0.472
+    },
+    "tierC_general_explicit_verified": {
+      "units": 57,
+      "observed": 815,
+      "uniques": 502,
+      "duplicates": 130,
+      "chao2": 1758.1,
+      "ci_low": 1548.3,
+      "ci_high": 2027.9,
+      "completeness": 0.464
+    },
+    "campaign_as_unit": {
+      "units": 55,
+      "observed": 956,
+      "uniques": 577,
+      "duplicates": 144,
+      "chao2": 2081.2,
+      "ci_low": 1844.1,
+      "ci_high": 2381.6,
+      "completeness": 0.459
+    },
+    "units_with_ge20_taxa": {
+      "units": 44,
+      "observed": 915,
+      "uniques": 540,
+      "duplicates": 149,
+      "chao2": 1863.2,
+      "ci_low": 1660.9,
+      "ci_high": 2120.3,
+      "completeness": 0.491
+    },
+    "drop_5_largest_units": {
+      "units": 69,
+      "observed": 785,
+      "uniques": 488,
+      "duplicates": 118,
+      "chao2": 1769.1,
+      "ci_low": 1544.8,
+      "ci_high": 2059.5,
+      "completeness": 0.444
+    }
+  },
+  "taxa_leave_one_unit_out": {
+    "chao2_min": 1928.7,
+    "chao2_max": 2104.7
+  },
+  "taxa_completeness_range_across_definitions": [
+    0.444,
+    0.491
+  ],
+  "note": "Exploratory richness estimates under exchangeable-unit assumptions; not a measured share of the regional flora.",
   "network": {
     "taxa": 61,
     "conditions": 34,
